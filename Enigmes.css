@@ -1,0 +1,40 @@
+body
+{
+	background-color: black;
+	color: white;
+	font-family: "Lucida console";
+	background-image: url(matrix.gif);
+}
+
+.container
+{
+	margin-top: 150px;
+}
+
+h1
+{
+	font-size: 50px;
+	color: green;
+}
+
+h2
+{
+	color: green;
+	background-color: black;
+	width: 20%
+}
+
+p
+{
+	background-color: black;
+	width: 40%;
+	color: green;
+}
+
+header
+{
+	margin-top: -150px;
+	position: fixed;
+	background-color: black;
+	width: 100%
+}

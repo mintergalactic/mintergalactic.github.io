@@ -1,0 +1,71 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+}
+.fly-in-text
+{
+	list-style: none;
+	position: absolute;
+	left: 50vw;
+	top:50vw;
+	transform: translateX(-25vw) translateY(-30vw);
+}
+
+.fly-in-text li
+{
+	display: inline-block;
+	color:#fff;
+	font-size: 4vw;
+	font-weight: 300vw;
+	margin-right: 0vw;
+
+	opacity: 1;
+	transition:all 2.5s ease;
+}
+
+.fly-in-text li:last-child
+{
+	margin-right: 0;
+
+}
+
+.fly-in-text.hidden li
+{
+	opacity: 0;
+
+
+}
+
+.fly-in-text.hidden li:nth-child(1) { transform: translateX(5vw) translateY(5vw); }
+.fly-in-text.hidden li:nth-child(2) { transform: translateX(-15vw) translateY(5vw); }
+.fly-in-text.hidden li:nth-child(3) { transform: translateX(10vw) translateY(10vw); }
+.fly-in-text.hidden li:nth-child(4) { transform: translateX(20vw) translateY(-5vw); }
+.fly-in-text.hidden li:nth-child(5) { transform: translateX(20vw) translateY(20vw); }
+.fly-in-text.hidden li:nth-child(6) { transform: translateX(-15vw) translateY(10vw); }
+.fly-in-text.hidden li:nth-child(7) { transform: translateX(25vw) translateY(25vw); }
+.fly-in-text.hidden li:nth-child(8) { transform: translateX(-25vw) translateY(10vw); }
+.fly-in-text.hidden li:nth-child(9) { transform: translateX(-5vw) translateY(-25vw); }
+.fly-in-text.hidden li:nth-child(10) { transform: translateX(-30vw) translateY(-30vw); }
+.fly-in-text.hidden li:nth-child(11) { transform: translateX(25vw) translateY(-30vw); }
+.fly-in-text.hidden li:nth-child(12) { transform: translateX(-25vw) translateY(-30vw); }
+.fly-in-text.hidden li:nth-child(13) { transform: translateX(-20vw) translateY(-20vw); }
+.fly-in-text.hidden li:nth-child(14) { transform: translateX(-10vw) translateY(5vw); }
+.fly-in-text.hidden li:nth-child(15) { transform: translateX(-5vw) translateY(10vw); }
+
+
+.fly-in-text.blink
+{
+	animation-name: blinker;
+	animation-duration: .5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+}
+@keyframes blinker
+{
+	0%{opacity: 1.0}
+	50%{opacity: 0.0}
+	100%{opacity: 1.0}
+}
